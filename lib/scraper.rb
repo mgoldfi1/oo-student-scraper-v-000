@@ -39,7 +39,7 @@ links.each do |link|
     hash[:profile_quote] = profile.css("div.profile-quote").text
     hash[:bio] = profile.css("div.description-holder p").text
     hash
-end
+  end
 
 
 
