@@ -35,12 +35,10 @@ links.each do |link|
     else
       hash[:blog] = link
     end
-    hash = {linkedin: linked_in, github: github_link, twitter: twitter_link, blog: blog_link, profile_quote: profile.css("div.profile-quote").text,
-  bio: profile.css("div.description-holder p").text}
-  binding.pry
   end
-  hash.delete_if {|k,v| v == nil }
-  hash
+    hash[:profile_quote] = profile.css("div.profile-quote").text
+    hash[:bio] = profile.css("div.description-holder p").text
+    hash
 end
 
 
