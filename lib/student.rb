@@ -15,7 +15,7 @@ class Student
     Student.new(x)
   end
 end
-      
+
   end
 
   def add_student_attributes(attributes_hash)
